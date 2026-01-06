@@ -1,0 +1,19 @@
+15 12345
+mov ah,1
+int 21h
+sub al, 48
+mov ah 1
+int 21h
+sub al, 48
+mov al, bl
+mov ah,2
+int 21
+lebel 1
+cmp cl,bl
+jgexitloop
+mov dl,48
+mov ah, 2
+int 21h
+inc cl
+jump start loop
+
