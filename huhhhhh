@@ -16,4 +16,103 @@ mov ah, 2
 int 21h
 inc cl
 jump start loop
+exit loop
+
+max number
+move ah1
+int 21h
+mov al
+move ah 1
+int 21h
+mov cl,al
+cmp bl,cl
+jl level a
+jmp lev b
+lev a
+mov dl,bl
+move ah,2
+int 21h
+jmp lev c
+lebel b
+mov dl,cl
+mov ah,2
+int 21h
+lev c
+
+3values print
+mov bh,2
+mov ch,3
+add bh, ch
+mov dh,1
+add dh,bh
+mov dl,48
+mov ah,2
+int 21h
+
+
+given in code 
+mov bl '4'
+mov cl 4
+add bl,cl
+sub al 48
+mov dl,bl
+mov ah,2
+int 21h
+
+add 2
+mov ah,1
+int21h
+mov bh,a 
+int21h
+mov ch,al
+add bh,ch
+sub bh,30h
+mov dl,bh
+mov ah, 2
+int 21h
+
+multipli
+
+mode small
+stack 100h
+.code
+main proc
+mov al,3
+mov bl, 3
+mul bl
+mov bh, ah
+mov dl, al
+add dl,48
+mov ah,2
+int 21h
+mov ah,4 ch
+int 21h
+mov ah, 4ch
+int 21h
+mainendproc
+
+division
+
+mode small
+stack 100h
+.code
+main procedure
+mov al,7
+mov bl,2
+div al
+mov bh,ah
+mov dl,ah
+mov dl,al
+add dl,48
+mov ah,2
+int21h
+mov ah,2
+int21h
+mov dl,bh
+add dl,48
+mov ah,2
+int 21h
+mov ah, 4ch
+int 21h
+mainendp
 
